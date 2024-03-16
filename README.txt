@@ -26,3 +26,6 @@ So instead of filtering the users whether they are of user_type=2 and with statu
 It is always better and faster do the filtering in the database, instead of checking the statuses/types in the code.
 This way, you will only get the exact type of users (translators) that you will send the notifications to. No need to do the checking in the code.
 So instead of retrieving like 500k users from User::all(), you will get and process A LOT less when you do the filtering in the database instead.
+
+As much as I want to attain the easy readability and maintainability of the code, I am also fond of optimizing the performance of the application.
+We can achieve great heights if we can do both.
